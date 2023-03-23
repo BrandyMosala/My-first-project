@@ -1,7 +1,23 @@
 body {
+    background: #dadde1;
     font-family: 'Playfair Display', serif;
         font-family: 'PT Mono', monospace;
         font-family: 'Roboto Mono', monospace;
+}
+
+.logo {
+        display: block;
+            margin-right: auto;
+            width: 40px;
+}
+div {
+    display: block;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
 }
 .weather {
     text-align: center;
@@ -37,14 +53,16 @@ body {
 }
 
 .container {
-    max-width:  600px;
+    width:  600px;
+    background: white;
     margin: 30px auto;
     padding: 20px;
     border: 1px solid #dadde1;
-    border-radius: 5px;
+    border-radius: 20px;
     font-family: 'Playfair Display', serif;
         font-family: 'PT Mono', monospace;
         font-family: 'Roboto Mono', monospace;
+
 
 
 
@@ -53,7 +71,7 @@ body {
 
 .search {
     width: 300px;
-    height: 40px;
+    height: 50px;
     text-align: center;
     border: 2px solid lightblue;
     border-radius: 6px ;
@@ -65,7 +83,7 @@ body {
     border: 2px solid lightpink;
     border-radius: 6px;
     width: 100px;
-    height: 40px;
+    height: 50px;
 }
 
 .humidity {
