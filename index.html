@@ -10,8 +10,9 @@
     <link href="src/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
         <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
         <script src="https://kit.fontawesome.com/15f6775963.js" crossorigin="anonymous"></script>
 
@@ -20,90 +21,69 @@
 </head>
 <body>
     <div class="container">
-        <hr />
-
+        <br />
+        
         <div class="weather">
-            <form class="search"  id = "search-form">
-            <input type="search" type = "text" id="city-input" placeholder="Search City..." >
-            <input type="submit" value="search"/>
-            </form>
+            <form id="search-form">
         
-        
+                <input type="search" type="text" class="search" id="city-input" placeholder="Search City...">
+                <input type="submit" value="search" class="button" />
         </div>
-        <h1 class="city" id="city">
-         
-        </h1>
-        <div id="date">
-            Monday 15:50
-         </div>
+        
+        </form>
 
+        <br />
+        <h1 class="city" id="city">
+        
+        </h1>
+        
+        <div class = "date" id="date">
+            Monday 15:50
+        </div>
+        
+        
+        
         <br />
         
         <div class="wednesday-weather">
-            <img src="images/sunny.png" width="100" />
+            <img src="images/partly sunny.png" width="100" />
+
+
+
         </div>
+
+
         <div>
-        <span class= "temperature" id="temperature"> </span>
-            <span class="units"></span>°C
-        </div>
-
-        <div class="description" id="description">
-        </div>
-        <div class="humidity" >
-            Humidity:<span id="humidity"></span>%
-        </div>
-        <div class="wind">
-           Wind:<span id="wind"></span>Km/h
-        </div>
-        <br />
-        <hr />
+            <div class="temp">
         
-        </div>
-        <div class="container forecast">
-            <div class="row">
-                <div class="col">
-                    <p class="wednesday">Wed</p>
-                    <img src="images/sunny.png" width="50" />
-                    <p id="temperature1"> 14°/26°</p>
-                </div>
-                <div class="col">
-                    <p class="thursday">Thur</p>
-                    <img src="images/sunny.png" width="50" />
-                    <p class="temperature2">13°/28°</p>
-                </div>
-                <div class="col">
-                    <p class="friday">Fri</p>
-                    <img src="images/rain.png" width="50" />
-                    <p class="temperature3">13°/29°</p>
-                </div>
-                <div class="col">
-                    <p class="saturday">Sat</p>
-                    <img src="images/partly sunny.png" width="50" />
-                    <p class="temperature4">15°/30°</p>
-                </div>
-                <div class="col">
-                    <p class="sunday">Sun</p>
-                    <img src="images/thunder.png" width="50" />
-                    <p class="temperature5">16°/26°</p>
-                </div>
-                <div class="col">
-                    <p class="monday">Mon</p>
-                    <img src="images/thunder.png" width="50" />
-                    <p class="temperature6">15°/28°</p>
-                </div>
-                <div class="col">
-                    <p class="tuesday">Tues</p>
-                    <img src="images/rain.png" width="50" />
-                    <p class="temperature7">15°/29°</p>
-                </div>
+                <span class= "temperature" id="temperature"> </span>
+                <span class="units"></span>°C
+        
             </div>
-        </div>
+        
+            <div class="description" id="description">
+            </div>
+            <div class="humidity">
+                Humidity:<span id="humidity"></span>%
+        
+            </div>
+            <div class="wind">
+                Wind:<span id="wind"></span>Km/h
+            </div>
 
-        </div>
+            <hr />
+        
+    
 
+
+<div class="developer">
         <small>
             <a href="https://github.com/BrandyMosala/My-first-project" target="blank"> Open Source Code</a>, by Mabrand Mosala
         </small>
+</div>
+    </div>
+
+<br />
 
         <script src="src/index.js"></script>
     

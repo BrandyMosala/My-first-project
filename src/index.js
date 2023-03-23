@@ -47,12 +47,7 @@ function displayWeatherCondition (response) {
   function searchCity (city) {
   let apiKey = "12e9e1e92222fd5fe834d5938372d7d0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get (apiUrl).then (displayWeatherCondition);
-  }
-
-  function getLocation (event) {
-    event.preventDefault ();
-    
+  axios.get (apiUrl).then (displayWeatherCondition)
   }
 
 
@@ -64,8 +59,5 @@ dateElement.innerHTML = formatDate(currentTime);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit); 
-
-let locationButton = document.querySelector("#location-button");
-locationButton.addEventListener("click", getLocation);
 
 searchCity("Johannesburg");
