@@ -38,6 +38,8 @@ function displayWeatherCondition (response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round (response.data.wind.speed);
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
+  iconElement.setAttribute ( "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   
 
 
@@ -54,6 +56,7 @@ function displayWeatherCondition (response) {
 
 
 let dateElement = document.querySelector("#date");
+let iconElement = document.querySelector("#icon");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
